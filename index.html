@@ -9,24 +9,27 @@
 
 <body>
     <div class="container">
-        <h2>Algorithm Demonstrator</h2>
-        <div class="input-label">
-            Enter comma-separated array:
+        <div class="input-group">
+            <label for="array">Enter array elements (comma-separated):</label>
+            <input type="text" id="array">
         </div>
-        <input type="text" id="inputArray" class="input-field">
-        <div class="input-label">
-            Enter K for Kth largest/smallest element:
+        <div class="input-group">
+            <label for="k">Enter k for kth largest/smallest element:</label>
+            <input type="text" id="k">
         </div>
-        <input type="number" id="kValue" class="input-field"><br>
-        <button onclick="findKthLargest()">Find Kth Largest/Smallest</button>
-        <div class="output" id="kthOutput"></div>
+        <button onclick="findKthLargestAndSmallest()">Find Kth Largest/Smallest</button>
+        <div class="result" id="kthResult"></div>
 
-        <div class="input-label">
-            Enter a string to reverse:
+        <div class="input-group">
+            <label for="string">Enter a string to reverse:</label>
+            <input type="text" id="string">
         </div>
-        <input type="text" id="reverseStringInput" class="input-field"><br>
         <button onclick="reverseString()">Reverse String</button>
-        <div class="output" id="reverseStringOutput"></div>
+        <div class="result" id="reverseResult"></div>
+
+        <!-- Add more input groups and buttons for other functions -->
+
+    </div>
 
         <!-- Add more sections for other functionalities -->
 

@@ -1,15 +1,21 @@
-function findKthLargest() {
-    const inputArray = document.getElementById('inputArray').value.split(',').map(Number);
-    const k = parseInt(document.getElementById('kValue').value);
-    const sortedArray = inputArray.sort((a, b) => b - a); // Descending order
+
+function findKthLargestAndSmallest() {
+    const arrayInput = document.getElementById('array').value;
+    const k = parseInt(document.getElementById('k').value);
+
+    const array = arrayInput.split(',').map(Number);
+    const sortedArray = array.slice().sort((a, b) => b - a);
     const kthLargest = sortedArray[k - 1];
-    document.getElementById('kthOutput').innerText = `Kth Largest/Smallest Element: ${kthLargest}`;
+    const kthSmallest = sortedArray[array.length - k];
+
+    document.getElementById('kthResult').innerText = `Kth Largest: ${kthLargest}, Kth Smallest: ${kthSmallest}`;
 }
 
 function reverseString() {
-    const inputString = document.getElementById('reverseStringInput').value;
-    const reversedString = inputString.split('').reverse().join('');
-    document.getElementById('reverseStringOutput').innerText = `Reversed String: ${reversedString}`;
+    const stringInput = document.getElementById('string').value;
+    const reversedString = stringInput.split('').reverse().join('');
+
+    document.getElementById('reverseResult').innerText = `Reversed String: ${reversedString}`;
 }
 
 // Implement other functionalities in a similar manner

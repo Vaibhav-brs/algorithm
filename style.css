@@ -6,34 +6,37 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #bead129c;
+    background-color: #f0f0f0;
 }
-
 .container {
-    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #a75d5d;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.input-label {
-    margin-bottom: 10px;
+.input-group {
+    margin-bottom: 20px;
 }
-
-.input-field {
-    padding: 5px;
-    margin-bottom: 10px;
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
 }
-
-.btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+.input-group input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.input-group button {
+    padding: 8px 16px;
     border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
 }
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-.output {
+.result {
     margin-top: 20px;
 }
